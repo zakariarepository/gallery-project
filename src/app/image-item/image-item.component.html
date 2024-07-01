@@ -1,0 +1,22 @@
+<div class="d-flex justify-content-start  align-items-start  ">
+  <div class="card" style="width: 18rem; margin-top: 2.5rem;">
+    <img src="{{image.webformatURL}}" style="width: 18rem; height: 24rem; object-fit: cover;" class="card-img-top" alt="..." (click)="clickImage()">
+    <div class="card-body">
+      <div class="d-flex justify-content-between">
+        <h5 class="card-title" style="white-space: nowrap;overflow: hidden; text-overflow: ellipsis; max-width: 150px">{{image.tags}}</h5>
+<!--        <p class="card-text">{{image.original_language}} DH</p>-->
+      </div>
+<!--      <p style="white-space: nowrap;overflow: hidden; text-overflow: ellipsis; max-width: 230px">{{image.overview}}</p>-->
+      <div class="d-flex justify-content-between">
+        <div class="d-flex">
+          <i class="bi bi-heart-fill me-1" style="color: red"></i>
+          <h6>{{image.likes}}</h6>
+        </div>
+        <h6>Comments : {{image.comments}}</h6>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

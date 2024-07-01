@@ -1,0 +1,9 @@
+<div class="text-center">
+  <h1>album images</h1>
+</div>
+<app-search (searchTextChanged)="onSearchTextEnetered($event)"></app-search>
+<ul class="row">
+  <div class="col" *ngFor="let elt of images;">
+    <app-image-item [image]="elt" ></app-image-item>
+  </div>
+</ul>
